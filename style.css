@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: linear-gradient(135deg, #667eea, #764ba2, #ff758c);
+
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    text-align: center;
+}
+
+/* SEARCH BAR */
+.search-form {
+    margin-bottom: 25px;
+}
+
+.search-form input {
+    padding: 12px;
+    width: 230px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.search-form button {
+    padding: 12px 18px;
+    border: none;
+    background: #00c6ff;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-form button:hover {
+    background: #00a2cc;
+}
+
+/*CARD */
+.card {
+    width: 360px;
+    background: rgba(20, 20, 40, 0.85); /* slight purple tint */
+    backdrop-filter: blur(12px);
+
+    color: white;
+    padding: 30px;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+/* TEXT */
+.card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #a18cd1);
+    
+    background-clip: text;           /* standard */
+    -webkit-background-clip: text;   /* chrome support */
+    
+    color: transparent;              /* important */
+}
+
+#phonetic {
+    font-size: 15px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+/* AUDIO BUTTON */
+#playAudio {
+    margin: 15px 0 20px;
+    padding: 10px 15px;
+    border: none;
+
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    color: white;
+
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#playAudio:hover {
+    transform: scale(1.08);
+}
+/* INFO TEXT */
+.card p {
+    margin: 12px 0;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.card strong {
+    color: #00eaff;
+}
